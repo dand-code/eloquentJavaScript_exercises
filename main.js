@@ -26,7 +26,7 @@ for (let i = 0; i <= 100; i++) {
 
 //When you have that working, modify your program to print "FizzBuzz" for numbers that are divisible by both 3 and 5 (and still print "Fizz" or "Buzz" for numbers divisible by only one of those).
 
-console.log('the solution for exercise 2 part 2:')
+console.log('the solution for exercise 2 part 2:');
 
 let counter2 = 0;
 
@@ -42,3 +42,33 @@ for (let i = 0; i <= 100; i++) {
         console.log(counter2);
     }
 }
+
+//Write a program that creates a string that represents an 8×8 grid, using newline characters to separate lines. At each position of the grid there is either a space or a "#" character. The characters should form a chessboard.
+
+console.log('the solution for exercise 3:');
+let size = 8;
+let board = "";
+
+for (let y = 0; y < size; y++) {
+    for (let x = 0; x < size; x++) {
+        if ((x + y) % 2 == 0) {
+            board += " ";
+        } else {
+            board += "#";
+        }
+    }
+    board += "\n";
+}
+console.log(board);
+
+// let row = '';
+// for (let i = 1; i <= 8; i++) {
+//     if (i % 2 == 0) {
+//         row = ' # # # #';
+//         console.log(row);
+//     } else {
+//         row = '# # # #';
+//         console.log(row);
+//     }
+// }
+
